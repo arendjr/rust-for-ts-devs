@@ -16,3 +16,12 @@ Or consult any of the other learning materials made available by the Rust
 community:
 
   https://www.rust-lang.org/learn
+
+## How to use this repository
+
+Just open this repository in VS Code and make sure you Rust Analyzer installed.
+
+Then open `src/main.rs`. It acts as the "ToC" from where you can easily click
+into any of the lessons.
+
+You can run `cargo run` to display quiz answers.
