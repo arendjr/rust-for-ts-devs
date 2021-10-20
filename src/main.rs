@@ -9,8 +9,13 @@ mod clone_trait;
 mod copy_trait;
 mod enums;
 mod functions_and_tuples;
+mod generic_functions;
+mod generic_structs;
 mod if_else;
+mod impl_and_dyn;
 mod let_bindings;
+mod lifetime_elision;
+mod lifetimes;
 mod r#match;
 mod move_semantics;
 mod mutability;
@@ -19,10 +24,13 @@ mod numbers;
 mod option_and_result;
 mod option_and_result_conversions;
 mod references;
+mod split_examples;
 mod strings;
 mod strings_revisited;
 mod struct_impl;
 mod structs;
+mod traits;
+mod where_clauses;
 
 // First course: Basic data types and control flow
 mod course_1 {
@@ -70,6 +78,26 @@ mod course_2 {
     pub use super::borrowing_rules::*;
     // 10: Strings revisited
     pub use super::strings_revisited::*;
+}
+
+// Third course: Generics and lifetimes
+mod course_3 {
+    // 1: Generic structs
+    pub use super::generic_structs::*;
+    // 2: Generic functions
+    pub use super::generic_functions::*;
+    // 3: Where clauses
+    pub use super::where_clauses::*;
+    // 4: Traits
+    pub use super::traits::*;
+    // 5: Impl and dyn
+    pub use super::impl_and_dyn::*;
+    // 6: Lifetimes
+    pub use super::lifetimes::*;
+    // 7: Lifetime elision
+    pub use super::lifetime_elision::*;
+    // 8: Split examples
+    pub use super::split_examples::*;
 }
 
 fn main() {
