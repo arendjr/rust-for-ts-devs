@@ -5,9 +5,13 @@
 
 mod borrowing;
 mod borrowing_rules;
+mod boxes;
+mod callbacks;
+mod cells;
 mod clone_trait;
 mod copy_trait;
 mod enums;
+mod function_traits;
 mod functions_and_tuples;
 mod generic_functions;
 mod generic_structs;
@@ -16,6 +20,7 @@ mod impl_and_dyn;
 mod let_bindings;
 mod lifetime_elision;
 mod lifetimes;
+mod maps;
 mod r#match;
 mod move_semantics;
 mod mutability;
@@ -23,13 +28,16 @@ mod mutable_methods;
 mod numbers;
 mod option_and_result;
 mod option_and_result_conversions;
+mod reference_counting;
 mod references;
+mod sets;
 mod split_examples;
 mod strings;
 mod strings_revisited;
 mod struct_impl;
 mod structs;
 mod traits;
+mod vectors;
 mod where_clauses;
 
 // First course: Basic data types and control flow
@@ -99,6 +107,28 @@ mod course_3 {
     // 8: Split examples
     pub use super::split_examples::*;
 }
+
+// Fourth course: Containers and callbacks
+mod course_4 {
+    // 1: Vectors
+    pub use super::vectors::*;
+    // 2: Sets
+    pub use super::sets::*;
+    // 3: Maps
+    pub use super::maps::*;
+    // 4: Box
+    pub use super::boxes::*;
+    // 5: Reference counting
+    pub use super::reference_counting::*;
+    // 6: Cells
+    pub use super::cells::*;
+    // 7: Callbacks
+    pub use super::callbacks::*;
+    // 8: Function traits
+    pub use super::function_traits::*;
+}
+
+mod looking_ahead;
 
 fn main() {
     println!("# Course 2: Quiz answers");
